@@ -14,11 +14,6 @@
             if (queryString["url"] == null)
             {
                 response.StatusCode = 400;
-                response.Write("<html>");
-                response.Write("<body>");
-                response.Write("<h1>A url must be specified in the query string.</h1>");
-                response.Write("</body>");
-                response.Write("</html>");
                 response.End();
                 return;
             }
