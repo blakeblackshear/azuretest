@@ -64,8 +64,6 @@
             //if (cbAddFooter.Checked)
             //    AddFooter(pdfConverter);
 
-            pdfConverter.NavigationTimeout = 240;
-            
             // Performs the conversion and get the pdf document bytes that can 
             // be saved to a file or sent as a browser response
             var pdfBytes = pdfConverter.GetPdfBytesFromUrl(url);
